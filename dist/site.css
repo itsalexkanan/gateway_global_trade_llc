@@ -25,3 +25,7 @@
 .home-hero .button svg{transition:transform .2s ease}
 .home-hero .button:hover svg{transform:translateX(3px)}
 @media(prefers-reduced-motion:reduce){.home-hero .button,.home-hero .button svg{transition:none}}
+
+/* Keep the hero explanation short and readable. */
+.home-hero p{font-size:20px;font-weight:500;line-height:1.5;color:#242833;max-width:760px}
+@media(max-width:760px){.home-hero p{font-size:18px;line-height:1.55}}
