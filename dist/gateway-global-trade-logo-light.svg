@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 610 132" role="img" aria-labelledby="title desc">
+  <title id="title">Gateway Global Trade LLC</title>
+  <desc id="desc">A gold globe with an orbital path beside the Gateway Global Trade name.</desc>
+  <g fill="none" stroke="#D7B574" stroke-width="2.2">
+    <circle cx="67" cy="66" r="42"/>
+    <ellipse cx="67" cy="66" rx="19" ry="42"/>
+    <path d="M27 54h80M27 78h80"/>
+    <ellipse cx="67" cy="66" rx="42" ry="17" transform="rotate(-23 67 66)" stroke-width="1.8"/>
+  </g>
+  <circle cx="67" cy="66" r="4" fill="#D7B574"/>
+  <path d="M32 20c22-13 53-16 75-3" fill="none" stroke="#D7B574" stroke-width="1.5"/>
+  <text x="132" y="61" fill="#F2EFE5" font-family="Georgia, 'Times New Roman', serif" font-size="31" letter-spacing="5.2">GATEWAY GLOBAL</text>
+  <path d="M135 78h95m174 0h94" stroke="#D7B574" stroke-width="1"/>
+  <text x="305" y="84" fill="#D7B574" font-family="Georgia, 'Times New Roman', serif" font-size="13" text-anchor="middle" letter-spacing="5">TRADE LLC</text>
+</svg>
