@@ -1,5 +1,5 @@
 # Gateway Global Trade LLC
 
-The Git repository root is this folder. The published website is in `dist/`.
+Edit the website pages, styles, scripts, and images in this folder. This is the Git repository root.
 
-Use this folder when creating and pushing branches. Changes inside `dist/` belong to this repository and can be pushed from here.
+Site publishing stages those files in the ignored `build/` folder. That folder is generated for publishing and removed afterward.
