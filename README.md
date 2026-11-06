@@ -2,15 +2,10 @@
 
 Edit the website pages, styles, scripts, and images in this folder. This is the Git repository root.
 
-The GitHub Actions workflow builds these files into the ignored `build/` folder before publishing.
+Cloudflare Workers Builds prepares these files in the ignored `build/` folder before deployment.
 
 ## Deployment
 
-Every push to `main` runs `.github/workflows/deploy.yml`. It builds the static site and deploys the `gateway-global-trade` Cloudflare Worker, attached to `gatewayglobaltrade.net` as its custom domain.
+The `gateway-global-trade` Cloudflare Worker serves `gatewayglobaltrade.net`. Cloudflare is connected to the `itsalexkanan/gateway_global_trade_llc` GitHub repository and automatically deploys pushes to `main`.
 
-Before the first deployment, add these GitHub Actions repository secrets:
-
-- `CLOUDFLARE_ACCOUNT_ID`
-- `CLOUDFLARE_API_TOKEN`, with permission to deploy Workers and manage Worker custom domains for the `gatewayglobaltrade.net` zone
-
-After those secrets are configured, later pushes to `main` deploy automatically.
+The production build runs `node scripts/build-site.mjs`, then `npx wrangler deploy`. The Worker configuration in `wrangler.jsonc` attaches the custom domain.
