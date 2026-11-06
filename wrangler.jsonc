@@ -1,8 +1,15 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "hardtosimple-com",
-  "compatibility_date": "2026-11-04",
+  "name": "gateway-global-trade",
+  "compatibility_date": "2026-11-06",
+  "workers_dev": false,
   "assets": {
     "directory": "./build"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "gatewayglobaltrade.net",
+      "custom_domain": true
+    }
+  ]
 }

@@ -25,6 +25,8 @@ const pages = [
   "privacy.html",
   "products.html",
   "shipping.html",
+  "sitemap.xml",
+  "robots.txt",
   "site.css",
   "site.js",
 ];
@@ -46,4 +48,4 @@ mkdirSync(output, { recursive: true });
 for (const page of pages) cpSync(path.join(root, page), path.join(output, page));
 cpSync(images, path.join(output, "images"), { recursive: true });
 
-process.stdout.write(`Prepared ${pages.length} pages and images in build/.\n`);
+process.stdout.write(`Prepared ${pages.length} site files and images in build/.\n`);
